@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name='pacmanbar',
+    name='pacman_bar',
     version='0.1',
     description='Load bar in pacman style',
-    py_modules=['src.pacman_bar'],
+    py_modules=['pacman_bar'],
     package_dir={'': 'src'},
     install_requires=[],
     long_description=open('README.md').read(),
