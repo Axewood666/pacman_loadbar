@@ -68,5 +68,6 @@ class PacmanBar:
         minutes, seconds = divmod(int(current_time), 60)
         timer_display = f"{minutes:02}:{seconds:02}"
         if not self.pause:
-            result_mes = "Success!" if self.success else "Failed!"
-            print(f"{result_mes} Elapsed time: {timer_display}    ")
+            result_mes = "\033[32mSuccess!\033[0m" \
+                if self.success else "\033[31mFailed!\033[0m"
+            print(f"{result_mes} Time taken: {timer_display}    ")
