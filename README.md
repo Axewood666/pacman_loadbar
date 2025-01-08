@@ -20,12 +20,14 @@ bar = PacmanBar(step_time=0.5, interval=4)
 
 # Запуск пакмана
 bar.start()
-#...
+# Основной процесс продолжается здесь
+for i in range(10):
+    sleep(1)
 # Завершит лоадбар и выведет результат с затраченным временем
 bar.stop()
 ```
 
-### С паузой
+### С pause
 ```
 python
 from pacman_bar import PacmanBar
@@ -36,4 +38,22 @@ bar = PacmanBar(step_time=0.5, interval=4, duration=5, pause=True)
 # Запуск пакмана (пауза на 5 секунд с отображением загрузки)
 bar.start()
 bar.stop()
+```
+### С duration
+```
+from pacman_bar import PacmanBar
+from time import sleep
+
+# Инициализация с заданными параметрами
+bar = PacmanBar(step_time=0.5, interval=3, duration=10)
+
+# Запуск пакмана без остановки основного потока
+bar.start()
+
+# Основной процесс продолжается здесь
+for i in range(10):
+    sleep(1)
+
+# Завершение лоадбара и вывод результата с затраченным временем
+bar.stop(False)
 ```
