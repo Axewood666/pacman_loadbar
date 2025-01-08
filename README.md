@@ -27,7 +27,7 @@ for i in range(10):
 bar.stop()
 ```
 
-### С pause
+#### С pause
 ```
 python
 from pacman_bar import PacmanBar
@@ -39,7 +39,7 @@ bar = PacmanBar(step_time=0.5, interval=4, duration=5, pause=True)
 bar.start()
 bar.stop()
 ```
-### С duration
+#### С duration
 ```
 from pacman_bar import PacmanBar
 from time import sleep
