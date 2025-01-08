@@ -69,4 +69,4 @@ class PacmanBar:
         timer_display = f"{minutes:02}:{seconds:02}"
         if not self.pause:
             result_mes = "Success!" if self.success else "Failed!"
-            print(f"{result_mes} Elapsed time: {timer_display}")
+            print(f"{result_mes} Elapsed time: {timer_display}    ")
